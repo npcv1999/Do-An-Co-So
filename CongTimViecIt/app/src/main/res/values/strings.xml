@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">CongTimViecIt</string>
+    <string name="t_n_ng_nh_p">Tên đăng nhập</string>
+    <string name="m_t_kh_u">Mật khẩu</string>
+    <string name="t_o_t_i_kho_n_m_i">Tạo tài khoản mới</string>
+    <string name="ch_a_c_t_i_kho_n">Chưa có tài khoản?</string>
+    <string name="ng_nh_p">Đăng Nhập</string>
+    <string name="nh_p_l_i_m_t_kh_u">Nhập lại mật khẩu</string>
+    <string name="t_o_t_i_kho_n">Tạo tài khoản</string>
+    <string name="email">Email</string>
+    <string name="vi_c_l_m_y_u_th_ch">Việc làm yêu thích</string>
+    <string name="cv_c_a_t_i">CV của tôi</string>
+    <string name="c_c_vi_c_ng_k">Các việc đã đăng kí</string>
+    <string name="qu_n_l_t_i_kho_n">Quản lý tài khoản</string>
+    <string name="ch_n_qu_n">Chọn quận</string>
+    <string name="ch_n_lo_i_vi_c">Chọn loại việc</string>
+    <string name="a_i_m">Địa Điểm</string>
+    <string name="t_m_ki_m">Tìm kiếm</string>
+    <string name="lo_i_vi_c">Loại Việc</string>
+    <string name="n_p_n_ngay">Nộp đơn ngay</string>
+</resources>
