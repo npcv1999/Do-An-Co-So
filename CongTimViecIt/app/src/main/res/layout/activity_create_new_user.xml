@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".CreateNewUser">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="233dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="209dp"
-        android:text="@string/t_o_t_i_kho_n"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repasstxt" />
-
     <!--android:text="@string/email"-->
 
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="@string/t_o_t_i_kho_n"
+        app:layout_constraintBottom_toTopOf="@+id/textview_login"
+        app:layout_constraintEnd_toEndOf="@+id/repasstxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/repasstxt" />
 
     <EditText
         android:id="@+id/Emaitxt"
@@ -77,18 +77,6 @@
         app:layout_constraintTop_toBottomOf="@+id/passtxt" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginTop="48dp"
-        android:text="already_registered"
-        android:textColor="#FFEB3B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
         android:id="@+id/textview_login"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
@@ -100,7 +88,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
