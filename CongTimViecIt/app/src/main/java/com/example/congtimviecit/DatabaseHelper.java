@@ -26,14 +26,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
-    public long addUser(String user, String password){
+    public boolean addUser(String user, String password){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("username",user);
         contentValues.put("password",password);
         long res = db.insert("registeruser",null,contentValues);
+        if(res==-1) return false;
+        else return true;
+    }
+    public boolean checkAdd(String username)
+    {
+        String[] columns = { COL_1 };
+        SQLiteDatabase db = getReadableDatabase();
+        String selection = COL_2 + "=?";
+        String[] selectionArgs = { username};
+        Cursor cursor = db.query(TABLE_NAME,columns,selection,selectionArgs,null,null,null);
+
+        int count = cursor.getCount();
+        cursor.close();
         db.close();
-        return  res;
+
+        if(count>0)
+            return  true;
+        else
+            return  false;
     }
 
     public boolean checkUser(String username, String password){

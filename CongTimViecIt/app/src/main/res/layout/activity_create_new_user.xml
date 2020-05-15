@@ -12,82 +12,74 @@
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="136dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="111dp"
         android:text="@string/t_o_t_i_kho_n"
-        app:layout_constraintBottom_toTopOf="@+id/textview_login"
-        app:layout_constraintEnd_toEndOf="@+id/repasstxt"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/repasstxt" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repasstxt" />
 
     <EditText
         android:id="@+id/Emaitxt"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="99dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Idtxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/Idtxt"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="99dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="Tên đăng nhập"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/passtxt"
-        app:layout_constraintStart_toStartOf="@+id/Emaitxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Emaitxt" />
 
     <EditText
         android:id="@+id/passtxt"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="99dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="Mật khẩu"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/repasstxt"
-        app:layout_constraintStart_toStartOf="@+id/Idtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Idtxt" />
 
     <EditText
         android:id="@+id/repasstxt"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="86dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="99dp"
         android:ems="10"
         android:hint="Nhập lại mật khẩu"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/passtxt"
-        app:layout_constraintTop_toBottomOf="@+id/passtxt" />
-
-    <TextView
-        android:id="@+id/textview_login"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:paddingLeft="10dp"
-        android:text="login"
-        android:textColor="#04ea00"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passtxt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
