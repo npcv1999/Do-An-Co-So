@@ -10,11 +10,11 @@ import android.widget.TextView;
 import java.util.List;
 public class CustomListAdapter  extends BaseAdapter {
 
-    private List<Country> listData;
+    private List<Item> listData;
     private LayoutInflater layoutInflater;
     private Context context;
 
-    public CustomListAdapter(Context aContext,  List<Country> listData) {
+    public CustomListAdapter(Context aContext,  List<Item> listData) {
         this.context = aContext;
         this.listData = listData;
         layoutInflater = LayoutInflater.from(aContext);
@@ -42,14 +42,17 @@ public class CustomListAdapter  extends BaseAdapter {
             holder = new ViewHolder();
             holder.flagView = (ImageView) convertView.findViewById(R.id.imageView_flag);
             holder.countryNameView = (TextView) convertView.findViewById(R.id.textView_countryName);
+            holder.luongView = (TextView) convertView.findViewById(R.id.txtluong);
             holder.populationView = (TextView) convertView.findViewById(R.id.textView_population);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        Country country = this.listData.get(position);
+        Item country = this.listData.get(position);
         holder.countryNameView.setText(country.getCountryName());
+        holder.luongView.setText("Mức lương: "+country.getLuong());
+
         holder.populationView.setText("Vị trí: " + country.getPopulation());
 
         int imageId = this.getMipmapResIdByName(country.getFlagName());
@@ -72,6 +75,7 @@ public class CustomListAdapter  extends BaseAdapter {
         ImageView flagView;
         TextView countryNameView;
         TextView populationView;
+        TextView luongView;
     }
 
 }

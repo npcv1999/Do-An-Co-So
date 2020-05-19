@@ -1,17 +1,20 @@
 package com.example.congtimviecit;
 
-public class Country {
+public class Item {
 
     private String countryName;
 
     // Image name (Without extension)
     private String flagName;
     private String population;
+    private String luongView;
 
-    public Country(String countryName, String flagName, String population) {
+    public Item(String countryName, String luongView,String flagName, String population) {
         this.countryName= countryName;
         this.flagName= flagName;
         this.population= population;
+        this.luongView= luongView;
+
     }
 
     public String getPopulation() {
@@ -38,8 +41,16 @@ public class Country {
         this.flagName = flagName;
     }
 
+    public String getLuong() {
+        return luongView;
+    }
+
+    public void setLuong(String luongView) {
+        this.luongView = luongView;
+    }
+
     @Override
     public String toString()  {
-        return this.countryName+" \nVị trí: "+ this.population+"";
+        return this.countryName+"Mức lương: "+ this.luongView+" \nVị trí: "+ this.population+"";
     }
 }
