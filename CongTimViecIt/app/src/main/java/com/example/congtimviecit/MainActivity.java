@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     Button mSearch;
@@ -54,9 +55,18 @@ public class MainActivity extends AppCompatActivity {
         mSearch = (Button) findViewById(R.id.SeachBn);
         mSearch.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View view) {
+                String dd = selection.getText().toString().trim();
+                String lv = selection1.getText().toString().trim();
+                if(dd.equals("Quận Bình Thạnh") && lv.equals("MOBILE DEV")){
                 Intent registerIntent = new Intent(MainActivity.this, ListMain2Activity.class);
                 startActivity(registerIntent);
+                }
+                else
+                {
+                    Toast.makeText(MainActivity.this, "Không tìm thấy công ty phù hợp", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -77,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
                 (android.R.layout.simple_spinner_dropdown_item);
         //Thiết lập adapter cho Spinner
         spin.setAdapter(adapter);
+        spin.setOnItemSelectedListener(new MyProcessEvent());
+
 
         //spinner CV
         selection1 =(TextView) findViewById(R.id.slcCV);
@@ -94,7 +106,39 @@ public class MainActivity extends AppCompatActivity {
                 (android.R.layout.simple_spinner_dropdown_item);
         //Thiết lập adapter cho Spinner
         spin1.setAdapter(adapter1);
+        spin1.setOnItemSelectedListener(new MyProcessEvent2());
+    }
+    private class MyProcessEvent implements
+            OnItemSelectedListener {
+        //Khi có chọn lựa thì vào hàm này
+        public void onItemSelected(AdapterView<?> arg0,
+                                   View arg1,
+                                   int arg2,
+                                   long arg3) {
+            //arg2 là phần tử được chọn trong data source
+            selection.setText(arr[arg2]);
+        }
 
+        //Nếu không chọn gì cả
+        public void onNothingSelected(AdapterView<?> arg0) {
+            selection.setText("");
+        }
+    }
+    private class MyProcessEvent2 implements
+            OnItemSelectedListener {
+        //Khi có chọn lựa thì vào hàm này
+        public void onItemSelected(AdapterView<?> arg0,
+                                   View arg1,
+                                   int arg2,
+                                   long arg3) {
+            //arg2 là phần tử được chọn trong data source
+            selection1.setText(arr1[arg2]);
+        }
+
+        //Nếu không chọn gì cả
+        public void onNothingSelected(AdapterView<?> arg0) {
+            selection1.setText("");
+        }
     }
 }
 

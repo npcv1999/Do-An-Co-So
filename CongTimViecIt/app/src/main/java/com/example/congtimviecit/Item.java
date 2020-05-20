@@ -51,6 +51,6 @@ public class Item {
 
     @Override
     public String toString()  {
-        return this.countryName+"Mức lương: "+ this.luongView+" \nVị trí: "+ this.population+"";
+        return this.countryName+"\nMức lương: "+ this.luongView+" \nVị trí: "+ this.population+"";
     }
 }

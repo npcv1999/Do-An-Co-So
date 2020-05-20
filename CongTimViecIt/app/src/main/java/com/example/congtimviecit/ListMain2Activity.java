@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,19 +41,26 @@ public class ListMain2Activity extends AppCompatActivity {
         Item vnpt = new Item("VNPT Media Software","600 - 1,700 USD", "vnpt", "Mobile Dev (Android, iOS, React Native)");
 
 
+        //TextView selection =(TextView) findViewById(R.id.slcDiaDiem);
+        //TextView selection1 =(TextView) findViewById(R.id.slcCV);
+        //String dd = selection.getText().toString().trim();
+        //String lv = selection1.getText().toString().trim();
+        //if(dd.equals("Bình Thạnh") && lv.equals("MOBILE DEV"))
+            list.add(inno);
+            list.add(shinhan);
+            list.add(zalo);
+            list.add(vnpt);
+            list.add(shinhan);
+            list.add(vnpt);
+            list.add(shinhan);
+            list.add(zalo);
+            list.add(inno);
+            list.add(shinhan);
+            return list;
 
-        list.add(inno);
-        list.add(shinhan);
-        list.add(zalo);
-        list.add(vnpt);
-        list.add(shinhan);
-        list.add(vnpt);
-        list.add(shinhan);
-        list.add(zalo);
-        list.add(inno);
-        list.add(shinhan);
 
-        return list;
+
+
     }
 
 }
