@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
             "MOBILE DEV",
             "ANDROID",
             "IOS",
-            "WINDOW",
-            "LINUX",
-            "UBUNTU",
-            "HTML5",
-            "CSS3",
-            "JAVASCRIPT"};
+            ".NET",
+            "TESTER",
+            "REACT NAVTIVE",
+            "PHP",
+            "IT HELP DESK",
+            "WEB"};
     TextView selection1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String dd = selection.getText().toString().trim();
                 String lv = selection1.getText().toString().trim();
-                if(dd.equals("Quận Bình Thạnh") && lv.equals("MOBILE DEV") || lv.equals("ANDROID")){
+                if(dd.equals("Quận Bình Thạnh") && lv.equals("MOBILE DEV") || lv.equals("ANDROID") ||lv.equals("IOS") ||lv.equals("REACT NAVTIVE") ){
                 Intent registerIntent = new Intent(MainActivity.this, ListMain2Activity.class);
                 startActivity(registerIntent);
                 }

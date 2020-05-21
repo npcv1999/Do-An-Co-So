@@ -27,8 +27,8 @@ public class ListMain2Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Object o = listView.getItemAtPosition(position);
-                Item country = (Item) o;
-                Toast.makeText(ListMain2Activity.this, "Bạn vừa chọn công ty :" + " " + country, Toast.LENGTH_LONG).show();
+                Item item = (Item) o;
+                Toast.makeText(ListMain2Activity.this, "Bạn vừa chọn công ty :" + " " + item, Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -40,12 +40,6 @@ public class ListMain2Activity extends AppCompatActivity {
         Item zalo = new Item("Zalo careers","700 - 1,500 USD", "zalo", "Mobile Dev (Android, iOS, React Native)");
         Item vnpt = new Item("VNPT Media Software","600 - 1,700 USD", "vnpt", "Mobile Dev (Android, iOS, React Native)");
 
-
-        //TextView selection =(TextView) findViewById(R.id.slcDiaDiem);
-        //TextView selection1 =(TextView) findViewById(R.id.slcCV);
-        //String dd = selection.getText().toString().trim();
-        //String lv = selection1.getText().toString().trim();
-        //if(dd.equals("Bình Thạnh") && lv.equals("MOBILE DEV"))
             list.add(inno);
             list.add(shinhan);
             list.add(zalo);
