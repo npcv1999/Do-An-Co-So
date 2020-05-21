@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String dd = selection.getText().toString().trim();
                 String lv = selection1.getText().toString().trim();
-                if(dd.equals("Quận Bình Thạnh") && lv.equals("MOBILE DEV")){
+                if(dd.equals("Quận Bình Thạnh") && lv.equals("MOBILE DEV") || lv.equals("ANDROID")){
                 Intent registerIntent = new Intent(MainActivity.this, ListMain2Activity.class);
                 startActivity(registerIntent);
                 }
