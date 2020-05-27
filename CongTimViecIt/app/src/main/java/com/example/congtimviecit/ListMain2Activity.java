@@ -28,7 +28,12 @@ public class ListMain2Activity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Object o = listView.getItemAtPosition(position);
                 Item item = (Item) o;
+
                 Toast.makeText(ListMain2Activity.this, "Bạn vừa chọn công ty :" + " " + item, Toast.LENGTH_LONG).show();
+                if(position ==1)
+                {
+
+                }
             }
         });
     }

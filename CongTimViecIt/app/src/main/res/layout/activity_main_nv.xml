@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainNvActivity">
+
+    <Button
+        android:id="@+id/QuanlyViecButn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="55dp"
+        android:text="@string/c_c_cv_ng_k_ph_ng_v_n"
+        app:layout_constraintBottom_toTopOf="@+id/QuanLyTKNVButn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DangViecButn" />
+
+    <Button
+        android:id="@+id/QuanLyTKNVButn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/qu_n_l_t_i_kho_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuanlyViecButn" />
+
+    <Button
+        android:id="@+id/DangViecButn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/ng_vi_c_l_m_m_i"
+        app:layout_constraintBottom_toTopOf="@+id/QuanlyViecButn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

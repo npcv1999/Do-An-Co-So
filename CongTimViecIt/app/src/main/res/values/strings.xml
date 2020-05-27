@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Cổng tìm việc</string>
+    <string name="app_name">Cổng tìm việc IT</string>
     <string name="t_n_ng_nh_p">Tên đăng nhập</string>
     <string name="m_t_kh_u">Mật khẩu</string>
     <string name="t_o_t_i_kho_n_m_i">Tạo tài khoản mới</string>
@@ -19,4 +19,23 @@
     <string name="t_m_ki_m">Tìm kiếm</string>
     <string name="lo_i_vi_c">Loại Việc</string>
     <string name="n_p_n_ngay">Nộp đơn ngay</string>
+    <string name="ng_vi_c_l_m_m_i">Đăng việc làm mới</string>
+    <string name="m_t_c_ng_vi_c">Mô tả công việc</string>
+    <string name="lo_i_c_ng_vi_c">Loại công việc</string>
+    <string name="a_ch">Địa chỉ</string>
+    <string name="t_n_c_ng_ty">Tên Công Ty</string>
+    <string name="ng_vi_c_l_m">Đăng việc làm</string>
+    <string name="c_c_cv_ng_k_ph_ng_v_n">Các CV đăng kí phỏng vấn</string>
+    <string name="nh_p_s_i_n_tho_i">Nhập số điện thoại</string>
+    <string name="nh_p_email">Nhập email</string>
+    <string name="nh_p_t_n">Nhập tên</string>
+    <string name="nh_p_ng_y_d_nh_ph_ng_v_n">Nhập ngày dự định phỏng vấn</string>
+    <string name="name">Name</string>
+    <string name="h_n_l_ch_ph_ng_v_n">Hẹn lịch phỏng vấn</string>
+    <string name="th_ng_tin_ng_vi_n">Thông tin ứng viên</string>
+    <string name="t_n">Tên</string>
+    <string name="ng_y_d_nh_ph_ng_v_n">Ngày dự định phỏng vấn</string>
+    <string name="s_i_n_tho_i">Số điẹn thoại</string>
+    <string name="x_c_nh_n_h_n_ph_ng_v_n">Xác nhận hện phỏng vấn</string>
+    <string name="x_c_nh_n_tr_ng_tuy_n">Xác nhận trúng tuyển</string>
 </resources>
