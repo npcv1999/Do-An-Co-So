@@ -14,12 +14,13 @@
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".ListMain2Activity">
+
         </activity>
         <activity android:name=".Main3Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+
+        </activity>
+        <activity android:name=".Main3aActivity">
+
         </activity>
         <activity android:name=".Main4Activity">
 
@@ -28,6 +29,7 @@
         <activity android:name=".CreateNewUser">
         </activity>
         <activity android:name=".LoginActivity">
+
         </activity>
 
 
@@ -40,9 +42,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainNv2Activity">
+
         </activity>
-        <activity android:name=".MainNv3Activity">
+        <activity android:name=".ListUngVienActivity">
+
         </activity>
+        <activity android:name=".MainUngVien1Activity">
+
+        </activity>
+        <activity android:name=".MainUngVien2Activity">
+
+        </activity>
+        <activity android:name=".MainUngVien3Activity">
+
+        </activity>
+
     </application>
 
 </manifest>

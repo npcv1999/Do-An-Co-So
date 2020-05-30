@@ -13,13 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 import android.widget.Button;
 
-public class Main3Activity extends AppCompatActivity {
+public class Main3aActivity extends AppCompatActivity {
     Button mNop;
     TextView txtIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.activity_main3a);
         List<Selected> image_details = getListData();
         final ListView listView = (ListView) findViewById(R.id.lsvDetail);
         listView.setAdapter(new CustomSelectAdapter(this, image_details));
@@ -35,16 +35,16 @@ public class Main3Activity extends AppCompatActivity {
         mNop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Intent = new Intent(Main3Activity.this, Main4Activity.class);
-                startActivity(Intent);
+                Intent registerIntent = new Intent(Main3aActivity.this, Main4Activity.class);
+                startActivity(registerIntent);
             }
         });
     }
 
     private List<Selected> getListData() {
         List<Selected> list = new ArrayList<Selected>();
-        Selected inno = new Selected("Innotech", "800 - 2,000 USD","inno", "Mobile Dev (Android, iOS, React Native)","475A, Điện Biên Phủ, P.25, Bình Thạnh");
-        list.add(inno);
+        Selected shinhan = new Selected("Shinhan Finance Vietnam", "500 - 1,800 USD","shinhan", "Mobile Dev (Android, iOS, React Native)","475A, Điện Biên Phủ, P.25, Bình Thạnh");
+        list.add(shinhan);
         return list;
     }
 }

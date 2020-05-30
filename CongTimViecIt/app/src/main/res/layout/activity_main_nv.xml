@@ -7,41 +7,56 @@
     tools:context=".MainNvActivity">
 
     <Button
-        android:id="@+id/QuanlyViecButn"
+        android:id="@+id/btnCacCV"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="55dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="38dp"
         android:text="@string/c_c_cv_ng_k_ph_ng_v_n"
-        app:layout_constraintBottom_toTopOf="@+id/QuanLyTKNVButn"
+        app:layout_constraintBottom_toTopOf="@+id/btnQLTKNV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DangViecButn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDangViec" />
 
     <Button
-        android:id="@+id/QuanLyTKNVButn"
+        android:id="@+id/btnQLTKNV"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginEnd="19dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="48dp"
         android:text="@string/qu_n_l_t_i_kho_n"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/QuanlyViecButn" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCacCV" />
 
     <Button
-        android:id="@+id/DangViecButn"
+        android:id="@+id/btnDangViec"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="291dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="37dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="38dp"
         android:text="@string/ng_vi_c_l_m_m_i"
-        app:layout_constraintBottom_toTopOf="@+id/QuanlyViecButn"
+        app:layout_constraintBottom_toTopOf="@+id/btnCacCV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQTV" />
+
+    <TextView
+        android:id="@+id/txtQTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="80dp"
+        android:text="NV: Nguyễn Phạm Chí Vinh "
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDangViec"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

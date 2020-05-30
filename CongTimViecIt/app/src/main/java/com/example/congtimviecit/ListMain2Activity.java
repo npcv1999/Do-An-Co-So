@@ -2,6 +2,7 @@ package com.example.congtimviecit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,13 +27,16 @@ public class ListMain2Activity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                Object o = listView.getItemAtPosition(position);
-                Item item = (Item) o;
 
-                Toast.makeText(ListMain2Activity.this, "Bạn vừa chọn công ty :" + " " + item, Toast.LENGTH_LONG).show();
+                if(position ==0)
+                {
+                    Intent registerIntent = new Intent(ListMain2Activity.this, Main3Activity.class);
+                    startActivity(registerIntent);
+                }
                 if(position ==1)
                 {
-
+                    Intent registerIntent = new Intent(ListMain2Activity.this, Main3aActivity.class);
+                    startActivity(registerIntent);
                 }
             }
         });
