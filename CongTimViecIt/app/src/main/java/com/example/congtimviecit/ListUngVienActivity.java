@@ -3,6 +3,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +17,6 @@ public class ListUngVienActivity extends AppCompatActivity {
         List<Ungvien> image_details = getListData();
         final ListView listView = (ListView) findViewById(R.id.lsvUngvien);
         listView.setAdapter(new CustomUngVienAdapter(this, image_details));
-
         // When the user clicks on the ListItem
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 

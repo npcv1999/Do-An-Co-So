@@ -16,6 +16,7 @@ import java.util.Calendar;
 
 public class Main4Activity extends AppCompatActivity {
     Button mHen;
+    Button mHome;
     EditText edtDate;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,14 @@ public class Main4Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Main4Activity.this, "Chúc mừng bạn đã hẹn lịch thành công", Toast.LENGTH_SHORT).show();
+            }
+        });
+        mHome=(Button)findViewById(R.id.btnHome);
+        mHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(Main4Activity.this,LoginActivity.class);
+                startActivity(home);
             }
         });
     }

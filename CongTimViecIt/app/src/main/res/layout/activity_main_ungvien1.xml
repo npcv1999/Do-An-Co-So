@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgr_nv"
     tools:context=".MainUngVien1Activity">
 
     <EditText
@@ -18,6 +19,7 @@
         android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -33,6 +35,7 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/textView10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -46,7 +49,7 @@
         android:ems="10"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -55,7 +58,7 @@
         android:layout_width="287dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="58dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="8dp"
         android:autofillHints=""
@@ -63,25 +66,28 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="189dp"
+        android:layout_width="284dp"
         android:layout_height="38dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="104dp"
         android:layout_marginBottom="8dp"
         android:text="@string/th_ng_tin_ng_vi_n"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView6"
@@ -91,9 +97,11 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="322dp"
         android:text="@string/t_n"
+        android:textColor="#4CAF50"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -105,6 +113,7 @@
         android:layout_marginEnd="134dp"
         android:layout_marginBottom="8dp"
         android:text="@string/ng_y_d_nh_ph_ng_v_n"
+        android:textColor="#4CAF50"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtDate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,6 +129,7 @@
         android:layout_marginEnd="235dp"
         android:layout_marginBottom="8dp"
         android:text="@string/s_i_n_tho_i"
+        android:textColor="#4CAF50"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtPhone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,6 +145,8 @@
         android:layout_marginEnd="302dp"
         android:layout_marginBottom="8dp"
         android:text="@string/email"
+        android:textColor="#4CAF50"
+        android:textColorHighlight="#4CAF50"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/txtEmail"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,7 +161,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/button_selector_login_regist"
         android:text="@string/x_c_nh_n_h_n_ph_ng_v_n"
+        android:textColor="#FFFCFC"
         app:layout_constraintBottom_toTopOf="@+id/btnTrung"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -158,16 +172,16 @@
 
     <Button
         android:id="@+id/btnTrung"
-        android:layout_width="137dp"
+        android:layout_width="149dp"
         android:layout_height="72dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/button_tuyen"
         android:text="@string/x_c_nh_n_tr_ng_tuy_n"
+        android:textColor="#FDFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnXacnhan" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnFile"
@@ -176,7 +190,9 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="267dp"
+        android:background="@drawable/button_selector_login_regist"
         android:text="File CV của ứng viên"
+        android:textColor="#FBFBFB"
         app:layout_constraintBottom_toTopOf="@+id/btnXacnhan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -186,15 +202,15 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="156dp"
+        android:layout_width="149dp"
         android:layout_height="72dp"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="31dp"
         android:layout_marginEnd="43dp"
         android:layout_marginBottom="53dp"
+        android:background="@drawable/khong_tuyen"
         android:text="Xác nhận không trúng tuyển"
+        android:textColor="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnTrung"
-        app:layout_constraintTop_toBottomOf="@+id/btnXacnhan" />
+        app:layout_constraintStart_toEndOf="@+id/btnTrung" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,133 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/it"
+    android:background="@drawable/backgr_gradient"
     tools:context=".LoginActivity">
 
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="226dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="39dp"
-        android:text="@string/ng_nh_p"
+        android:layout_width="214dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/button_selector_login_regist"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        android:text="Đăng nhâp với quyền admin"
+        android:textColor="#FDF9F9"
+        android:textColorLink="#FDFCFC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegis"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnRegis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="89dp"
-        android:text="@string/t_o_t_i_kho_n_m_i"
+        android:layout_width="214dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="128dp"
         android:background="@drawable/button_selector_login_regist"
+        android:text="Đăng nhập với tư cách ứng viên"
+        android:textColor="#FBFBFB"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="221dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <TextView
-        android:id="@+id/txtRe"
-        android:layout_width="146dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/ch_a_c_t_i_kho_n"
-        android:textAlignment="center"
-        android:textColor="#E80A0A"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnRegis"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.513" />
-
-    <EditText
-        android:id="@+id/edtLogin"
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="39dp"
-        android:autofillHints=""
-        android:background="#ffffffff"
-        android:drawableStart="@drawable/login"
-        android:ems="10"
-        android:hint="Tên đăng nhập"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edtPass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.964" />
-
-    <EditText
-        android:id="@+id/edtPass"
-        android:layout_width="226dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="88dp"
-        android:background="#ffffffff"
-        android:drawableStart="@drawable/pass"
-        android:ems="10"
-        android:hint="Mật khẩu"
-        android:inputType="textPassword"
-        android:nestedScrollingEnabled="false"
-        android:singleLine="false"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckBox
-        android:id="@+id/cbShowPwd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edtPass"
-        android:layout_alignLeft="@+id/edtPass"
-        android:checked="false"
-        android:text="Hiện mật khẩu"
-        android:textAllCaps="false"
-        android:textColorHighlight="#EA1212"
-        android:textColorHint="#FFFFFF"
-        android:textColorLink="#2850F1"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
-        app:layout_constraintEnd_toEndOf="@+id/edtPass"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/edtPass"
-        app:layout_constraintTop_toBottomOf="@+id/edtPass"
-        android:buttonTint="#f02f2b"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="276dp"
-        android:layout_height="213dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="42dp"
+        android:layout_width="407dp"
+        android:layout_height="338dp"
+        android:layout_marginTop="68dp"
 
         android:background="@drawable/ctv"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

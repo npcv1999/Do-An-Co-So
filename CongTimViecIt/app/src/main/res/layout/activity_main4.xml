@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sv"
     tools:context=".Main4Activity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginBottom="20dp"
         android:text="@string/nh_p_s_i_n_tho_i"
+        android:textColor="#1CA120"
         app:layout_constraintBottom_toTopOf="@+id/Phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name" />
@@ -24,6 +26,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginBottom="19dp"
         android:text="@string/nh_p_email"
+        android:textColor="#1CA120"
         app:layout_constraintBottom_toTopOf="@+id/Email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Phone" />
@@ -36,6 +39,7 @@
         android:layout_marginTop="106dp"
         android:layout_marginBottom="26dp"
         android:text="@string/nh_p_t_n"
+        android:textColor="#1CA120"
         app:layout_constraintBottom_toTopOf="@+id/Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,6 +51,7 @@
         android:layout_marginStart="31dp"
         android:layout_marginBottom="22dp"
         android:text="@string/nh_p_ng_y_d_nh_ph_ng_v_n"
+        android:textColor="#4CAF50"
         app:layout_constraintBottom_toTopOf="@+id/Date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email" />
@@ -57,7 +62,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
         android:layout_marginBottom="72dp"
+        android:background="@drawable/button_search_submit"
         android:text="@string/h_n_l_ch_ph_ng_v_n"
+        android:textColor="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -122,5 +129,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_login_regist"
+        android:text="HOME"
+        android:textColor="#FBFBFB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sv"
     tools:context=".Main3Activity">
 
     <Button
         android:id="@+id/btnNop"
-        android:layout_width="347dp"
-        android:layout_height="70dp"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="54dp"
+        android:background="@drawable/button_search_submit"
         android:hint="Nộp ngay"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FBF9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

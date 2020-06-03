@@ -1,5 +1,9 @@
 package com.example.congtimviecit;
 
+import android.view.View;
+import android.view.ViewOutlineProvider;
+import android.widget.ImageView;
+
 public class Ungvien {
     private String tenungvien;
     private String tenhinh;
@@ -22,5 +26,6 @@ public class Ungvien {
     public void setTenhinh(String tenhinh) {
         this.tenhinh= tenhinh;
     }
+
 
 }
