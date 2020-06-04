@@ -22,7 +22,7 @@ public class MainUngVien1Activity extends AppCompatActivity {
         mten.setText("Nguyễn Phạm Chí Vinh");
         msdt.setText("0343767941");
         memail.setText("npcv4129@gmail.com");
-        mdate.setText("01/06/2020");
+        mdate.setText("09/06/2020");
 
     }
 }

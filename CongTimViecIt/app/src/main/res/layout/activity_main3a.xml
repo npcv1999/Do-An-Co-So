@@ -38,6 +38,7 @@
         android:layout_marginEnd="8dp"
         android:text="TextView"
         android:textAlignment="gravity"
+        android:textColor="#0E0E0E"
         app:layout_constraintBottom_toTopOf="@+id/btnNop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.652"

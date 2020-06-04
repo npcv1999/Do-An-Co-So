@@ -18,7 +18,7 @@
         android:text="@string/ng_vi_c_l_m"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#ED9006"
+        android:textColor="#FB7703"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/edtTenCT"
         app:layout_constraintEnd_toEndOf="parent"

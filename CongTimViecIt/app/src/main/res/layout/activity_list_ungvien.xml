@@ -11,7 +11,7 @@
         android:id="@+id/textView13"
         android:layout_width="351dp"
         android:layout_height="47dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="Danh sách ứng viên"
         android:textAlignment="center"
         android:textColor="#FF9800"
